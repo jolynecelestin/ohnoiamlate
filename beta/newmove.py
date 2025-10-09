@@ -26,7 +26,7 @@ rooms = {
 clear_screen()
 print('\nOh no you woke up late! Move between rooms using North, South, East or West. Time is running out!')
 
-print("\n(Tip: if you want to quit the game at any point, type 'quit' and then press the [enter] key.)")
+print("\n(Tip: if you want to quit the game at any point, type 'exit' and then press the [enter] key.)")
 
 current_room = 'Master bedroom'
 
@@ -39,7 +39,7 @@ while True:
     direction = input('North, South, East or West? ').strip().capitalize()
     clear_screen()
 
-    if direction in ('Quit', 'quit','Q','q'):
+    if direction in ('Exit', 'exit'):
         print('\nGame is ending now, hope you enjoyed it!')
         print('\nall done!\n')
         break
