@@ -72,63 +72,63 @@ while True:
         print('You are searching and found…')
 
         if current_room == 'Master bedroom':
-            print('…nothing.')
+            print('\n…nothing.')
             time -= 2
 
         elif current_room == 'Hallway 2':
-            print('…nothing.')
+            print('\n…nothing.')
             time -= 2
 
         elif current_room == 'Nursery':
-            print('…a baby!')
+            print('\n…a baby!')
             baby_bag.append('baby')
             items_remaining.remove('baby')
             time -= 1
             
         elif current_room == 'Hallway 1':
-            print('…nothing.')
+            print('\n…nothing.')
             time -= 2
 
         elif current_room == 'Bathroom':
-            print('…diapers!')
+            print('\n…diapers!')
             baby_bag.append('diapers')
             items_remaining.remove('diapers')
             time -= 1
             
         elif current_room == 'Bedroom':
-            print('…nothing.')
+            print('\n…nothing.')
             time -= 2
 
         elif current_room == 'Living room':
-            print('…a pacifier!')
+            print('\n…a pacifier!')
             baby_bag.append('pacifier')
             items_remaining.remove('pacifier')
             time -= 1
 
         elif current_room == 'Dining room':
-            print('…nothing.')
+            print('\n…nothing.')
             time -= 2
 
         elif current_room == 'Kitchen':
-            print('…a bottle!')
+            print('\n…a bottle!')
             baby_bag.append('bottle')
             items_remaining.remove('bottle')
             time -= 1
 
         elif current_room == 'Garage':
-            print('…clothes!')
+            print('\n…clothes!')
             baby_bag.append('clothes')
             items_remaining.remove('clothes')
             time -= 1
 
         elif current_room == 'Entryway':
-            print('…a car seat!')
+            print('\n…a car seat!')
             baby_bag.append('car seat')
             items_remaining.remove('car seat')
             time -= 1
 
         else:
-            print('Please enter a proper room name.')
+            print('\nPlease enter a proper room name.')
             time -= 1
             
 
@@ -147,6 +147,9 @@ while True:
     print('\nBaby bag:', baby_bag)
     print('Items remaining:', items_remaining)
     print ('\nRooms:',rooms_list)
+
+    print("\n(Tip: Once you collect all items, head outside.)")
+
     current_room = ask('\nWhich room would you like to go to next? ').capitalize()
     clear_screen()
     time -= 1
