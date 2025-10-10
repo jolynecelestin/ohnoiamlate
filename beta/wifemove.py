@@ -1,12 +1,3 @@
-import os
-import platform
-
-def clear_screen():
-    if platform.system() == 'Windows':
-        os.system('cls')
-    else:
-        os.system('clear')
-
 rooms = {
         'Master bedroom': {'Up': 'Hallway 2'},
         'Hallway 2': {'Up': 'Closet', 'Down': 'Master bedroom', 'Right': 'Hallway 1', 'Left': 'Nursery'},
@@ -25,8 +16,6 @@ rooms = {
 
 time = 5
 
-clear_screen()
-
 print('\nOh no you woke up late! Move between rooms using Up, Down, Right or Left. Time is running out!')
 
 print("\n(Tip: if you want to quit the game at any point, type 'exit' and then press the [enter] key.)")
@@ -41,7 +30,6 @@ while True:
     print("\nExits:", ", ".join(exits.keys()) or "None")
     direction = input('Up, Down, Right or Left? ').strip().capitalize()
     time -= 1
-    clear_screen()
 
     if time <  0 :
          print("\nYOU RAN OUT OF TIME, GAME OVER!.")
