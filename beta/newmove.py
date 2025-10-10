@@ -23,21 +23,30 @@ rooms = {
         'Outside' : {}
 }
 
+time = 5
+
 clear_screen()
+
+
 print('\nOh no you woke up late! Move between rooms using North, South, East or West. Time is running out!')
 
 print("\n(Tip: if you want to quit the game at any point, type 'exit' and then press the [enter] key.)")
 
 current_room = 'Master bedroom'
 
-
 while True:
+    print('\nTime remaining:',time,'minutes remaining')
 
     print(f"\nYou are in the {current_room}.")
     exits = rooms[current_room]
     print("\nExits:", ", ".join(exits.keys()) or "None")
     direction = input('North, South, East or West? ').strip().capitalize()
+    time -= 1
     clear_screen()
+
+    if time <  0 :
+         print("\nYOU RAN OUT OF TIME, GAME OVER!.")
+         break
 
     if direction in ('Exit', 'exit'):
         print('\nGame is ending now, hope you enjoyed it!')
