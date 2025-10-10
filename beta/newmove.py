@@ -23,7 +23,7 @@ rooms = {
         'Outside' : {}
 }
 
-time = 5
+time = 30
 
 clear_screen()
 

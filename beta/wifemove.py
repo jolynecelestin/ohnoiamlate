@@ -14,7 +14,7 @@ rooms = {
         'Outside' : {}
 }
 
-time = 5
+time = 30
 
 print('\nOh no you woke up late! Move between rooms using Up, Down, Right or Left. Time is running out!')
 
