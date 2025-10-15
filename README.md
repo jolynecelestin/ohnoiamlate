@@ -17,12 +17,14 @@ In harder versions of the game, once you grab the baby your time loss for moving
 When you go outside by living the Entryway to the South, you have all 6 items in your inventory within the 30 minutes, then you win! 
 
 
+Practice Moce: No timer, displays where exits are, set item locations, will see item in room you are in. Legos (cause game over) will be in Kids Bedroom.
+
 Easy Mode: No timer, displays where exits are, set locations for where items are located.
 
 Normal Mode: 30 minute timer is included in the game.
 
-Hard Mode: When baby is held in inventory time for everything doubles. Exit displays are removed
+Hard Mode: When baby is held in inventory time for everything doubles. Exit displays are removed.
 
-Super Hard Mode: Locations for all items are randomized between rooms. Holding baby in inventory doesn't change time
+Super Hard Mode: Locations for all items are randomized between rooms. Holding baby in inventory doesn't change time.
 
-Intense Mode: Hard + Super Hard rules 
+Intense Mode: Hard + Super Hard rules.
