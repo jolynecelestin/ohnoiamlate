@@ -17,7 +17,6 @@ def show_instructions():
 def show_status():
     print ('\n-----------------------------------------------------------------------------------')
     print(f"\nYou are in the {current_room}.")
-    exits = rooms[current_room]
     print("Exits:", ", ".join(exits.keys()) or "None")
     print("\nItems remaining:", items_remaining)
     print("Inventory:", baby_bag)
@@ -70,6 +69,8 @@ current_room = 'Master bedroom'
 
 # --- Status ---
 while True:
+    
+    exits = rooms[current_room]
     show_status()
     
 

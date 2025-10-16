@@ -17,12 +17,11 @@ def show_instructions():
 def show_status():
     print ('\n-----------------------------------------------------------------------------------')
     print(f"\nYou are in the {current_room}.")
-    exits = rooms[current_room]
     print("Exits:", ", ".join(exits.keys()) or "None")
     print("\nItems remaining:", items_remaining)
     print("Inventory:", baby_bag)
     room = room_items[current_room]
-    print("\nYou see", ", ".join(room) or "nothing")
+    print("\nYou see", ", ".join(room) or "nothing") 
 
 # --- World Map ---
 rooms = {
@@ -70,8 +69,11 @@ current_room = 'Master bedroom'
 
 # --- Status ---
 while True:
-    show_status()
+
+    exits = rooms[current_room]
+    show_status()    
     
+
 
     # --- Win condition ---
     if current_room == 'Outside':
@@ -94,7 +96,7 @@ while True:
    
     # --- Loop ---
     elif current_room != 'Outside':
-        action = input("\nWhat would you like to do? (e.g., 'go Up' or 'get item'): ").strip().lower()
+        action = input("\nWhat would you like to do? (e.g., 'go Up' or 'get Item'): ").strip().lower()
         
    
         # --- Exit check ---
