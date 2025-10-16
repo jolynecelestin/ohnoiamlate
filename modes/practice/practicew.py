@@ -96,7 +96,7 @@ while True:
    
     # --- Loop ---
     elif current_room != 'Outside':
-        action = input("\nWhat would you like to do? (e.g., 'go Up' or 'get Item'): ").strip().lower()
+        action = input("\nWhat would you like to do? (e.g., 'go Up' or 'get Pacifier'): ").strip().lower()
         
    
         # --- Exit check ---
